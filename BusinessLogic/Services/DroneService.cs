@@ -108,9 +108,27 @@ namespace Services.Services
                 return new ResponseResuls<List<Drone>>() { StatusCode = HttpStatusCode.InternalServerError, Result = null };
             }
         }
+        public ResponseResuls<string> GetDroneBatteryLevel(string SerialNumber)
+        {
+            try
+            {
+                var drone = _UnitOfWork.DroneRepository.GetDrone(SerialNumber);
+                if (drone != null)
+                {
+                    return new ResponseResuls<string>() { StatusCode = HttpStatusCode.OK, Result = $"{ drone.BatteryCapacity } %" };
+                }
+                return new ResponseResuls<string>() { StatusCode = HttpStatusCode.BadRequest, Result = "Drone Not Exists" };
+            }
+            catch (Exception ex)
+            {
+
+                return new ResponseResuls<string>() { StatusCode = HttpStatusCode.InternalServerError, Result = ex.Message };
+            }
+        }
         private decimal CalculateMedicationsWeight(List<Medication> Medications)
         {
             return Medications.Sum(m => m.Weight);
         }
+
     }
 }

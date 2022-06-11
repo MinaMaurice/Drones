@@ -88,13 +88,29 @@ namespace Drones.Controllers
         }
 
         [HttpGet]
-        [Route("GetAvailableDrones ")]
+        [Route("GetAvailableDrones")]
         public IActionResult GetAvailableDrones()
         {
             try
             {
                     var result = _DroneService.GetAvailableDrones();
                     return StatusCode((int)result.StatusCode, result.Result);
+            }
+            catch (Exception ex)
+            {
+
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+            }
+        }
+
+        [HttpGet]
+        [Route("GetDroneBatteryLevel")]
+        public IActionResult GetDroneBatteryLevel(string SerialNumber)
+        {
+            try
+            {
+                var result = _DroneService.GetDroneBatteryLevel(SerialNumber);
+                return StatusCode((int)result.StatusCode, result.Result);
             }
             catch (Exception ex)
             {

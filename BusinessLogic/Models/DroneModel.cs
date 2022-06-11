@@ -10,11 +10,15 @@ namespace BusinessLogic.Models
 {
     public class DroneModel
     {
+        [Required]
         [MaxLength(100)]
         public string SerialNumber { get; set; }
+        [Required]
         public ModelType Model { get; set; }
         [Range(0, 500)]
+        [Required]
         public decimal Weight { get; set; }
+        [Required]
         public Double BatteryCapacity { get; set; }
     }
 }

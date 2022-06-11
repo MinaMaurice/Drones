@@ -14,6 +14,7 @@ namespace Services.Interfaces
         ResponseResuls<string> LoadingMedication(LoadingMedicationModel model);
         ResponseResuls<List<Medication>> GetDroneMedications(string SerialNumber);
         ResponseResuls<List<Drone>> GetAvailableDrones();
+        ResponseResuls<string> GetDroneBatteryLevel(string SerialNumber);
 
     }
 }
