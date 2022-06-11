@@ -5,9 +5,9 @@ VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drones", "Drones\Drones.csproj", "{8B10F36C-DAEC-4F1C-BFCE-189456D117F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogic", "Services\BusinessLogic.csproj", "{1E2DA214-41AC-4AC3-B8C2-02AD818E97E3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogic", "BusinessLogic\BusinessLogic.csproj", "{1E2DA214-41AC-4AC3-B8C2-02AD818E97E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "Data\DAL.csproj", "{9BC456D9-F666-4EA1-A94D-F8F92D3A8144}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{9BC456D9-F666-4EA1-A94D-F8F92D3A8144}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
