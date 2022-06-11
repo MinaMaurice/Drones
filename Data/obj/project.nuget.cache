@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "NTW9BlQqtmR/q1e6cWSs7yBxsTBqdncTutE8sKeWKGJOtcuQuqSoHVNmtCTqE+IITb8LYoJv2rfulAr6hfPqEg==",
+  "success": true,
+  "projectFilePath": "D:\\Private\\Drones\\Data\\DAL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MoneyFellows\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

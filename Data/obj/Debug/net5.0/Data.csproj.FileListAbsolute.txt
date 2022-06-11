@@ -1,0 +1,5 @@
+C:\Users\MoneyFellows\source\repos\Drones\Data\obj\Debug\net5.0\Data.csproj.AssemblyReference.cache
+C:\Users\MoneyFellows\source\repos\Drones\Data\obj\Debug\net5.0\Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MoneyFellows\source\repos\Drones\Data\obj\Debug\net5.0\Data.AssemblyInfoInputs.cache
+C:\Users\MoneyFellows\source\repos\Drones\Data\obj\Debug\net5.0\Data.AssemblyInfo.cs
+C:\Users\MoneyFellows\source\repos\Drones\Data\obj\Debug\net5.0\Data.csproj.CoreCompileInputs.cache

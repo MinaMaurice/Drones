@@ -1,0 +1,15 @@
+C:\Users\MoneyFellows\source\repos\Drones\Services\obj\Debug\net5.0\BusinessLogic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MoneyFellows\source\repos\Drones\Services\obj\Debug\net5.0\BusinessLogic.AssemblyInfoInputs.cache
+C:\Users\MoneyFellows\source\repos\Drones\Services\obj\Debug\net5.0\BusinessLogic.AssemblyInfo.cs
+C:\Users\MoneyFellows\source\repos\Drones\Services\obj\Debug\net5.0\BusinessLogic.csproj.CoreCompileInputs.cache
+C:\Users\MoneyFellows\source\repos\Drones\Services\bin\Debug\net5.0\BusinessLogic.deps.json
+C:\Users\MoneyFellows\source\repos\Drones\Services\bin\Debug\net5.0\BusinessLogic.dll
+C:\Users\MoneyFellows\source\repos\Drones\Services\bin\Debug\net5.0\ref\BusinessLogic.dll
+C:\Users\MoneyFellows\source\repos\Drones\Services\bin\Debug\net5.0\BusinessLogic.pdb
+C:\Users\MoneyFellows\source\repos\Drones\Services\bin\Debug\net5.0\DAL.dll
+C:\Users\MoneyFellows\source\repos\Drones\Services\bin\Debug\net5.0\DAL.pdb
+C:\Users\MoneyFellows\source\repos\Drones\Services\obj\Debug\net5.0\BusinessLogic.csproj.AssemblyReference.cache
+C:\Users\MoneyFellows\source\repos\Drones\Services\obj\Debug\net5.0\BusinessLogic.csproj.CopyComplete
+C:\Users\MoneyFellows\source\repos\Drones\Services\obj\Debug\net5.0\BusinessLogic.dll
+C:\Users\MoneyFellows\source\repos\Drones\Services\obj\Debug\net5.0\ref\BusinessLogic.dll
+C:\Users\MoneyFellows\source\repos\Drones\Services\obj\Debug\net5.0\BusinessLogic.pdb

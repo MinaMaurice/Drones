@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drones", "Drones\Drones.csproj", "{8B10F36C-DAEC-4F1C-BFCE-189456D117F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogic", "Services\BusinessLogic.csproj", "{1E2DA214-41AC-4AC3-B8C2-02AD818E97E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "Data\DAL.csproj", "{9BC456D9-F666-4EA1-A94D-F8F92D3A8144}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B10F36C-DAEC-4F1C-BFCE-189456D117F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B10F36C-DAEC-4F1C-BFCE-189456D117F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B10F36C-DAEC-4F1C-BFCE-189456D117F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B10F36C-DAEC-4F1C-BFCE-189456D117F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E2DA214-41AC-4AC3-B8C2-02AD818E97E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E2DA214-41AC-4AC3-B8C2-02AD818E97E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E2DA214-41AC-4AC3-B8C2-02AD818E97E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E2DA214-41AC-4AC3-B8C2-02AD818E97E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BC456D9-F666-4EA1-A94D-F8F92D3A8144}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BC456D9-F666-4EA1-A94D-F8F92D3A8144}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BC456D9-F666-4EA1-A94D-F8F92D3A8144}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BC456D9-F666-4EA1-A94D-F8F92D3A8144}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {35E91147-2F3E-4AED-B1AB-4DA8827C98FB}
+	EndGlobalSection
+EndGlobal
