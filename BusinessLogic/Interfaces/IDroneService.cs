@@ -10,10 +10,10 @@ namespace Services.Interfaces
 {
     public interface IDroneService
     {
-         bool RegisterDrone(DroneModel model);
+        bool RegisterDrone(DroneModel model);
         ResponseResuls<string> LoadingMedication(LoadingMedicationModel model);
-         ResponseResuls<List<Medication>> GetDroneMedications(string SerialNumber);
-
+        ResponseResuls<List<Medication>> GetDroneMedications(string SerialNumber);
+        ResponseResuls<List<Drone>> GetAvailableDrones();
 
     }
 }

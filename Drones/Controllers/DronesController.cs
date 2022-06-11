@@ -86,5 +86,21 @@ namespace Drones.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
         }
+
+        [HttpGet]
+        [Route("GetAvailableDrones ")]
+        public IActionResult GetAvailableDrones()
+        {
+            try
+            {
+                    var result = _DroneService.GetAvailableDrones();
+                    return StatusCode((int)result.StatusCode, result.Result);
+            }
+            catch (Exception ex)
+            {
+
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+            }
+        }
     }
 }

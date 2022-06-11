@@ -33,6 +33,11 @@ namespace Data.Repositories
             return drones.Where(e => e.SerialNumber == SerialNumber).SingleOrDefault();
         }
 
+
+        public List<Drone> GetAvailableDrones()
+        {
+            return drones.Where(e => e.State == Enums.DroneState.IDLE && e.BatteryCapacity > 25).ToList();
+        }
         public void AssignMedication(string DroneSerialNumber, List<Medication> Medications)
         {
             var result = drones.Where(e => e.SerialNumber == DroneSerialNumber).SingleOrDefault();

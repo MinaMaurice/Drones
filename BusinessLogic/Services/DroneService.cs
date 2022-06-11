@@ -94,6 +94,20 @@ namespace Services.Services
 
             }
         }
+        public ResponseResuls<List<Drone>> GetAvailableDrones()
+        {
+            try
+            {
+                var drones = _UnitOfWork.DroneRepository.GetAvailableDrones();
+                return new ResponseResuls<List<Drone>>() { StatusCode = HttpStatusCode.OK, Result = drones };
+
+            }
+            catch (Exception)
+            {
+
+                return new ResponseResuls<List<Drone>>() { StatusCode = HttpStatusCode.InternalServerError, Result = null };
+            }
+        }
         private decimal CalculateMedicationsWeight(List<Medication> Medications)
         {
             return Medications.Sum(m => m.Weight);

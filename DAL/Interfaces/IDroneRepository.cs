@@ -12,7 +12,7 @@ namespace Data.Interfaces
         void InsertDrone(Drone drone);
         Drone GetDrone(string SerialNumber);
         void AssignMedication(string DroneSerialNumber, List<Medication> Medications);
-
+        List<Drone> GetAvailableDrones();
 
     }
 }
