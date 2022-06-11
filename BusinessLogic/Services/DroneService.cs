@@ -48,7 +48,7 @@ namespace Services.Services
                 var drone = _UnitOfWork.DroneRepository.GetDrone(model.DroneSerialNumber);
                 if (drone != null)
                 {
-                    if(drone.BatteryCapacity < 25)
+                    if (drone.BatteryCapacity < 25)
                         return new ResponseResuls<string>() { StatusCode = HttpStatusCode.BadRequest, Result = "Drone battery level is below 25 % " };
 
                     var medications = _UnitOfWork.MedicationRepository.GetMedications(model.MedicationCodes);
@@ -56,8 +56,10 @@ namespace Services.Services
                     {
                         decimal medicationsWeight = CalculateMedicationsWeight(medications);
                         if (medicationsWeight <= drone.Weight)
+                        {
                             _UnitOfWork.DroneRepository.AssignMedication(model.DroneSerialNumber, medications);
-
+                            return new ResponseResuls<string>() { StatusCode = HttpStatusCode.OK, Result = "Medications has been assigend" };
+                        }
                         return new ResponseResuls<string>() { StatusCode = HttpStatusCode.BadRequest, Result = "Medications are too Weight" };
 
                     }
@@ -73,6 +75,25 @@ namespace Services.Services
             }
         }
 
+        public ResponseResuls<List<Medication>> GetDroneMedications(string SerialNumber)
+        {
+            try
+            {
+                var drone = _UnitOfWork.DroneRepository.GetDrone(SerialNumber);
+                if (drone != null)
+                {
+                    return new ResponseResuls<List<Medication>>() { StatusCode = HttpStatusCode.OK, Result = drone.Medications };
+
+                }
+                return new ResponseResuls<List<Medication>>() { StatusCode = HttpStatusCode.BadRequest, Result = null };
+
+            }
+            catch (Exception ex)
+            {
+                return new ResponseResuls<List<Medication>>() { StatusCode = HttpStatusCode.InternalServerError, Result = null };
+
+            }
+        }
         private decimal CalculateMedicationsWeight(List<Medication> Medications)
         {
             return Medications.Sum(m => m.Weight);

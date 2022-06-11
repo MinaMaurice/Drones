@@ -65,5 +65,26 @@ namespace Drones.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
         }
+
+
+        [HttpGet]
+        [Route("GetDroneMedications")]
+        public IActionResult GetDroneMedications(string SerialNumber)
+        {
+            try
+            {
+                if (!string.IsNullOrEmpty(SerialNumber))
+                {
+                    var result = _DroneService.GetDroneMedications(SerialNumber);
+                    return StatusCode((int)result.StatusCode, result.Result);
+                }
+                return StatusCode(StatusCodes.Status400BadRequest, "Invalid Model");
+            }
+            catch (Exception ex)
+            {
+
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+            }
+        }
     }
 }

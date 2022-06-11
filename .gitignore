@@ -2,6 +2,8 @@ bin/
 obj/
 BusinessLogic/bin/
 BusinessLogic/obj/
-DAL/bin
-DAL/obj
+DAL/bin/
+DAL/obj/
 .vs/Drones/v17/.suo
+Drones/obj/
+Drones/bin/

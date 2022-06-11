@@ -1,4 +1,5 @@
 ﻿using BusinessLogic.Models;
+using Data.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,8 @@ namespace Services.Interfaces
     {
          bool RegisterDrone(DroneModel model);
         ResponseResuls<string> LoadingMedication(LoadingMedicationModel model);
+         ResponseResuls<List<Medication>> GetDroneMedications(string SerialNumber);
+
 
     }
 }
